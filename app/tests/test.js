@@ -1,8 +1,19 @@
+import solutions from './solutions.js';
+
+
 describe('sample test', () => {
 
-  test('test 1', async () => {
+  test('solutions is defined', async () => {
+    expect(solutions).toBeDefined();
+  })
 
-    expect(1).toEqual(2);
+  test('square function', () => {
+    
+    const sol1 = solutions.sol1;
+    expect(typeof sol1).toBe('function')
+
+    expect(sol1(2)).toEqual(4);
+
   })
 
 });
