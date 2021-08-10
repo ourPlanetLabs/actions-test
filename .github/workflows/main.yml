@@ -42,7 +42,7 @@ jobs:
         with:
           context: ./app
           file: ./app/Dockerfile
-          push: true
+          push: false
           tags: ${{ secrets.DOCKER_HUB_USERNAME }}/actions-test:latest
       
       - name: Image digest

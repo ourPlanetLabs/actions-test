@@ -1,3 +1,3 @@
 export default {
-  sol1 : a => a*a
+  sol1 : a => a*a-1
 }
